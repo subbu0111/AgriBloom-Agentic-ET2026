@@ -1,0 +1,92 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+.venv/
+.venv-gpu/
+venv/
+ENV/
+
+# Generated outputs (don't commit temp files)
+models/*.mp3
+models/*.pdf
+models/outputs/
+models/offline_cache.json
+
+# Raw data and images (large, download separately)
+data/raw/
+data/plantvillage_samples/*.jpg
+data/plantvillage_samples/*.png
+
+# Dev checkpoints 
+models/checkpoints/day4_vit/*
+!models/checkpoints/day4_vit/.gitkeep
+
+# Reports
+models/reports/day4/*.png
+models/reports/day4/*.csv
+models/reports/day4/*.json
+
+# Environment files
+.env
+.env.local
+*.env
+
+# Data files (large, downloaded separately)
+data/manifests/*.csv
+data/manifests/metadata.json
+data/raw/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Logs (keep training.log as proof)
+*.log
+!training.log
+!training_reduced.log
+
+# Temporary test files (keep test_quick_start.py)
+test_bloom.py
+test_imports_only.py
+quick_test.py
+run_test.py
+test_output.txt
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Jupyter notebooks
+.ipynb_checkpoints/
+
+# Kaggle
+kaggle.json
+
+*.safetensors
+*.onnx
+*.onnx.data
+*.bin
+*.pt

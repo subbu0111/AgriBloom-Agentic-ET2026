@@ -1,0 +1,63 @@
+# ==============================================================================
+# AgriBloom Agentic - Hugging Face Spaces Requirements
+# CPU-only (no CUDA) — compatible with HF free tier
+# ==============================================================================
+
+# --- Core Agent Framework ---
+langgraph>=0.2.0
+langchain>=0.3.0
+langchain-community>=0.3.0
+langchain-core>=0.3.0
+
+# --- UI Framework ---
+gradio==4.31.5
+
+# --- Deep Learning (CPU only for HF Spaces free tier) ---
+torch>=2.2.0
+torchvision>=0.17.0
+
+# --- Transformers & Models ---
+transformers>=4.40.0
+huggingface-hub==0.25.2
+accelerate>=0.30.0
+safetensors>=0.4.0
+
+# --- ONNX Runtime (CPU) ---
+onnxruntime>=1.17.0
+onnx>=1.16.0
+
+# --- Vision & Image Processing ---
+Pillow>=10.3.0
+opencv-python-headless>=4.9.0
+
+# --- Data Science ---
+numpy>=1.26.0
+pandas>=2.2.0
+scikit-learn>=1.4.0
+scipy>=1.13.0
+
+# --- Visualization ---
+plotly>=5.22.0
+matplotlib>=3.8.0
+kaleido>=0.2.1
+
+# --- PDF Generation ---
+reportlab>=4.2.0
+fpdf2>=2.7.0
+
+# --- Speech & Voice ---
+gTTS>=2.5.0
+pydub>=0.25.1
+
+# --- HTTP & APIs ---
+requests>=2.31.0
+aiohttp>=3.9.0
+httpx>=0.27.0
+
+# --- Configuration ---
+python-dotenv>=1.0.0
+
+# --- Utilities ---
+pyyaml>=6.0.0
+python-dateutil>=2.9.0
+tqdm>=4.66.0

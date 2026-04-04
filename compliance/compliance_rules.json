@@ -1,0 +1,145 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "source": ["FSSAI", "ICAR", "CIB&RC", "PFA Act"],
+    "last_updated": "2026-03-25",
+    "description": "Comprehensive compliance rules for AgriBloom agricultural advisory system"
+  },
+  "banned_inputs": {
+    "pesticides": [
+      "endosulfan",
+      "monocrotophos",
+      "methyl parathion",
+      "phosphamidon",
+      "carbofuran",
+      "phorate",
+      "triazophos",
+      "diazinon",
+      "fenthion",
+      "dichlorvos",
+      "methyl bromide",
+      "ethylene dibromide",
+      "aldrin",
+      "chlordane",
+      "dieldrin",
+      "lindane",
+      "ddt",
+      "heptachlor",
+      "mirex",
+      "toxaphene",
+      "barium carbonate",
+      "ethyl mercury chloride",
+      "sodium cyanide",
+      "captafol",
+      "nicotine sulfate",
+      "pentachlorophenol",
+      "benzene hexachloride",
+      "paraquat dimethyl sulphate",
+      "dazomet",
+      "fentin acetate",
+      "fentin hydroxide"
+    ],
+    "growth_regulators": [
+      "calcium carbide",
+      "ethephon above permitted limits",
+      "oxytocin for crops"
+    ],
+    "adulterants": [
+      "industrial dye",
+      "non food grade oil",
+      "metanil yellow",
+      "lead chromate",
+      "rhodamine b",
+      "sudan dyes"
+    ],
+    "fertilizers": [
+      "unregistered biofertilizer",
+      "contaminated organic manure"
+    ]
+  },
+  "maximum_residue_limits": {
+    "carbendazim": {
+      "limit_mg_kg": 0.5,
+      "crops": ["rice", "wheat", "maize", "tomato"]
+    },
+    "mancozeb": {
+      "limit_mg_kg": 3.0,
+      "crops": ["tomato", "potato", "maize"]
+    },
+    "propiconazole": {
+      "limit_mg_kg": 0.1,
+      "crops": ["wheat", "rice", "maize"]
+    },
+    "chlorpyrifos": {
+      "limit_mg_kg": 0.2,
+      "crops": ["maize", "sugarcane", "rice"]
+    },
+    "imidacloprid": {
+      "limit_mg_kg": 0.5,
+      "crops": ["rice", "cotton", "sugarcane"]
+    },
+    "cypermethrin": {
+      "limit_mg_kg": 0.5,
+      "crops": ["tomato", "maize", "rice"]
+    },
+    "tricyclazole": {
+      "limit_mg_kg": 3.0,
+      "crops": ["rice", "ragi"]
+    }
+  },
+  "safe_practices": [
+    "Prefer integrated pest management (IPM) before chemical escalation.",
+    "Use crop-stage aware dose limits and observe pre-harvest intervals (PHI).",
+    "Recommend local agronomist escalation for severe spread (>30% infection).",
+    "Rotate pesticide modes of action to prevent resistance development.",
+    "Calibrate spray equipment regularly for accurate dosage.",
+    "Wear protective equipment: gloves, mask, goggles during application."
+  ],
+  "required_disclaimers": [
+    "This advisory is AI-assisted and must be validated by your local Krishi Vigyan Kendra (KVK).",
+    "Follow state-specific regulations and product label instructions strictly.",
+    "Observe pre-harvest interval (PHI) before harvesting treated crops.",
+    "Dispose of empty pesticide containers safely as per local guidelines.",
+    "Keep pesticides away from children, livestock, and water sources."
+  ],
+  "regional_disclaimers": {
+    "hi": [
+      "यह सलाह AI-सहायता प्राप्त है और आपके स्थानीय कृषि विज्ञान केंद्र द्वारा सत्यापित होनी चाहिए।",
+      "राज्य-विशिष्ट नियमों और उत्पाद लेबल निर्देशों का सख्ती से पालन करें।"
+    ],
+    "kn": [
+      "ಈ ಸಲಹೆಯು AI-ಸಹಾಯಿತವಾಗಿದೆ ಮತ್ತು ನಿಮ್ಮ ಸ್ಥಳೀಯ KVK ಮೂಲಕ ಮಾನ್ಯಮಾಡಬೇಕು.",
+      "ರಾಜ್ಯ-ನಿರ್ದಿಷ್ಟ ನಿಯಮಗಳು ಮತ್ತು ಉತ್ಪನ್ನ ಲೇಬಲ್ ಸೂಚನೆಗಳನ್ನು ಕಟ್ಟುನಿಟ್ಟಾಗಿ ಅನುಸರಿಸಿ."
+    ],
+    "te": [
+      "ఈ సలహా AI-సహాయంతో ఉంది మరియు మీ స్థానిక KVK ద్వారా ధృవీకరించబడాలి.",
+      "రాష్ట్ర-నిర్దిష్ట నిబంధనలు మరియు ఉత్పత్తి లేబుల్ సూచనలను కఠినంగా అనుసరించండి."
+    ],
+    "ta": [
+      "இந்த ஆலோசனை AI-உதவியுடன் உள்ளது மற்றும் உங்கள் உள்ளூர் KVK மூலம் சரிபார்க்கப்பட வேண்டும்.",
+      "மாநில-குறிப்பிட்ட விதிமுறைகள் மற்றும் தயாரிப்பு லேபிள் வழிமுறைகளை கண்டிப்பாக பின்பற்றுங்கள்."
+    ]
+  },
+  "icar_guidelines": {
+    "spray_timing": "Avoid spraying during flowering period to protect pollinators. Spray early morning or late evening.",
+    "water_interval": "Maintain 24-48 hour interval between irrigation and pesticide spraying.",
+    "mixing_rules": "Never mix more than 2 pesticides. Always test compatibility on a small area first.",
+    "weather_conditions": "Do not spray if rain is expected within 6 hours or wind speed exceeds 15 km/hr.",
+    "re_entry_interval": "Do not enter treated fields for at least 12-24 hours after pesticide application."
+  },
+  "severity_thresholds": {
+    "critical_confidence": 0.85,
+    "moderate_confidence": 0.6,
+    "low_confidence": 0.4,
+    "escalation_triggers": {
+      "infection_spread_percent": 30,
+      "yield_loss_threshold": 25,
+      "consecutive_detections": 3
+    }
+  },
+  "emergency_contacts": {
+    "kisan_call_center": "1800-180-1551",
+    "poison_control": "011-26593677",
+    "icar_helpline": "1800-180-1584"
+  }
+}

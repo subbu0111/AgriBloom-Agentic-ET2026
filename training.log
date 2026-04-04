@@ -1,0 +1,490 @@
+2026-03-28 15:15:34,067 [INFO] Using GPU: NVIDIA GeForce RTX 4060 Laptop GPU (8.6 GB)
+2026-03-28 15:15:34,068 [INFO] CUDA Version: 12.1
+2026-03-28 15:15:55,663 [INFO] Loaded 84971 examples from data\manifests\train.csv
+2026-03-28 15:15:59,406 [INFO] Loaded 18208 examples from data\manifests\val.csv
+2026-03-28 15:15:59,452 [INFO] Training with 54 classes:
+2026-03-28 15:15:59,463 [INFO]   apple_black_rot: 1677 samples
+2026-03-28 15:15:59,471 [INFO]   apple_cedar_apple_rust: 1539 samples
+2026-03-28 15:15:59,479 [INFO]   apple_healthy: 1794 samples
+2026-03-28 15:15:59,486 [INFO]   apple_scab: 1753 samples
+2026-03-28 15:15:59,492 [INFO]   blueberry_healthy: 1600 samples
+2026-03-28 15:15:59,497 [INFO]   cherry_(including_sour)_healthy: 1620 samples
+2026-03-28 15:15:59,502 [INFO]   cherry_(including_sour)_powdery_mildew: 1501 samples
+2026-03-28 15:15:59,507 [INFO]   grape_black_rot: 1641 samples
+2026-03-28 15:15:59,516 [INFO]   grape_esca_(black_measles): 1677 samples
+2026-03-28 15:15:59,520 [INFO]   grape_healthy: 1518 samples
+2026-03-28 15:15:59,524 [INFO]   grape_leaf_blight_(isariopsis_leaf_spot): 1542 samples
+2026-03-28 15:15:59,531 [INFO]   maize_(maize)_cercospora_leaf_spot_gray_leaf_spot: 1427 samples
+2026-03-28 15:15:59,539 [INFO]   maize_(maize)_common_rust_: 1644 samples
+2026-03-28 15:15:59,546 [INFO]   maize_(maize)_healthy: 1631 samples
+2026-03-28 15:15:59,551 [INFO]   maize_(maize)_northern_leaf_blight: 1677 samples
+2026-03-28 15:15:59,555 [INFO]   orange_haunglongbing_(citrus_greening): 1739 samples
+2026-03-28 15:15:59,560 [INFO]   peach_bacterial_spot: 1586 samples
+2026-03-28 15:15:59,566 [INFO]   peach_healthy: 1516 samples
+2026-03-28 15:15:59,570 [INFO]   pepper,_bell_bacterial_spot: 1666 samples
+2026-03-28 15:15:59,573 [INFO]   pepper,_bell_healthy: 1712 samples
+2026-03-28 15:15:59,578 [INFO]   pepper_bell: 1730 samples
+2026-03-28 15:15:59,582 [INFO]   potato__early_blight: 702 samples
+2026-03-28 15:15:59,587 [INFO]   potato__healthy: 110 samples
+2026-03-28 15:15:59,591 [INFO]   potato__late_blight: 707 samples
+2026-03-28 15:15:59,596 [INFO]   potato_early_blight: 1674 samples
+2026-03-28 15:15:59,599 [INFO]   potato_healthy: 1596 samples
+2026-03-28 15:15:59,603 [INFO]   potato_late_blight: 1701 samples
+2026-03-28 15:15:59,607 [INFO]   ragi_blast: 2097 samples
+2026-03-28 15:15:59,612 [INFO]   ragi_healthy: 894 samples
+2026-03-28 15:15:59,617 [INFO]   ragi_rust: 1476 samples
+2026-03-28 15:15:59,621 [INFO]   raspberry_healthy: 1582 samples
+2026-03-28 15:15:59,624 [INFO]   rice_leaf_aug: 2686 samples
+2026-03-28 15:15:59,627 [INFO]   soybean_healthy: 1794 samples
+2026-03-28 15:15:59,632 [INFO]   squash_powdery_mildew: 1560 samples
+2026-03-28 15:15:59,637 [INFO]   strawberry_healthy: 1568 samples
+2026-03-28 15:15:59,640 [INFO]   strawberry_leaf_scorch: 1564 samples
+2026-03-28 15:15:59,644 [INFO]   sugarcane_healthy: 346 samples
+2026-03-28 15:15:59,647 [INFO]   sugarcane_mosaic: 330 samples
+2026-03-28 15:15:59,652 [INFO]   sugarcane_redrot: 366 samples
+2026-03-28 15:15:59,657 [INFO]   sugarcane_rust: 377 samples
+2026-03-28 15:15:59,662 [INFO]   sugarcane_yellow: 331 samples
+2026-03-28 15:15:59,667 [INFO]   tomato_bacterial_spot: 3018 samples
+2026-03-28 15:15:59,672 [INFO]   tomato_early_blight: 2326 samples
+2026-03-28 15:15:59,676 [INFO]   tomato_healthy: 2782 samples
+2026-03-28 15:15:59,680 [INFO]   tomato_late_blight: 2922 samples
+2026-03-28 15:15:59,684 [INFO]   tomato_leaf_mold: 2326 samples
+2026-03-28 15:15:59,689 [INFO]   tomato_mosaic_virus: 1847 samples
+2026-03-28 15:15:59,697 [INFO]   tomato_septoria_leaf_spot: 2738 samples
+2026-03-28 15:15:59,702 [INFO]   tomato_spider_mites_two_spotted_spider_mite: 2660 samples
+2026-03-28 15:15:59,720 [INFO]   tomato_target_spot: 2555 samples
+2026-03-28 15:15:59,737 [INFO]   tomato_yellow_leaf_curl_virus: 1721 samples
+2026-03-28 15:15:59,743 [INFO]   tomato_yellowleaf: 2267 samples
+2026-03-28 15:15:59,748 [INFO]   wheat_healthy: 81 samples
+2026-03-28 15:15:59,752 [INFO]   wheat_yellow_rust: 77 samples
+2026-03-28 15:16:00,677 [INFO] HTTP Request: HEAD https://huggingface.co/google/vit-base-patch16-224/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-03-28 15:16:00,984 [INFO] HTTP Request: HEAD https://huggingface.co/google/vit-base-patch16-224/resolve/main/preprocessor_config.json "HTTP/1.1 307 Temporary Redirect"
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-03-28 15:16:00,985 [WARNING] Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-03-28 15:16:01,086 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/vit-base-patch16-224/3f49326eb077187dfe1c2a2bb15fbd74e6ab91e3/preprocessor_config.json "HTTP/1.1 200 OK"
+2026-03-28 15:16:01,428 [INFO] HTTP Request: HEAD https://huggingface.co/google/vit-base-patch16-224/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-28 15:16:01,598 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/vit-base-patch16-224/3f49326eb077187dfe1c2a2bb15fbd74e6ab91e3/config.json "HTTP/1.1 200 OK"
+You passed `num_labels=54` which is incompatible to the `id2label` map of length `1000`.
+2026-03-28 15:16:02,008 [INFO] HTTP Request: HEAD https://huggingface.co/google/vit-base-patch16-224/resolve/main/model.safetensors "HTTP/1.1 302 Found"
+Loading weights:   0%|          | 0/200 [00:00<?, ?it/s]Loading weights: 100%|##########| 200/200 [00:00<00:00, 5127.51it/s]
+[1mViTForImageClassification LOAD REPORT[0m from: google/vit-base-patch16-224
+Key               | Status   |                                                                                           
+------------------+----------+-------------------------------------------------------------------------------------------
+classifier.bias   | MISMATCH | Reinit due to size mismatch - ckpt: torch.Size([1000]) vs model:torch.Size([54])          
+classifier.weight | MISMATCH | Reinit due to size mismatch - ckpt: torch.Size([1000, 768]) vs model:torch.Size([54, 768])
+
+Notes:
+- MISMATCH:	ckpt weights were loaded, but they did not match the original empty weight shapes.
+2026-03-28 15:16:02,668 [INFO] Trainable params: 85,840,182 / 85,840,182
+C:\Users\saketh\AgriBloom-Agentic-ET2026\utils\train_vision.py:381: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler() if use_amp else None
+2026-03-28 15:16:02,714 [INFO] Starting training for 3 epochs
+2026-03-28 15:16:02,715 [INFO] Mixed precision: True, Gradient accumulation: 2
+C:\Users\saketh\AgriBloom-Agentic-ET2026\utils\train_vision.py:410: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Traceback (most recent call last):
+  File "C:\Users\saketh\AgriBloom-Agentic-ET2026\utils\train_vision.py", line 613, in <module>
+    
+  File "C:\Users\saketh\AgriBloom-Agentic-ET2026\utils\train_vision.py", line 599, in main
+    early_stopping_patience=args.early_stopping,
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\saketh\AgriBloom-Agentic-ET2026\utils\train_vision.py", line 436, in train
+    train_loss += loss.item() * config.gradient_accumulation_steps
+                  ^^^^^^^^^^^
+RuntimeError: CUDA error: unspecified launch failure
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+_config.json "HTTP/1.1 404 Not Found"
+2026-03-28 15:15:28,012 [WARNING] Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-03-28 15:15:28,011 [INFO] HTTP Request: HEAD https://huggingface.co/google/vit-base-patch16-224/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-03-28 15:15:28,012 [WARNING] Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-03-28 15:15:28,319 [INFO] HTTP Request: HEAD https://huggingface.co/google/vit-base-patch16-224/resolve/main/preprocessor_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-28 15:15:28,319 [INFO] HTTP Request: HEAD https://huggingface.co/google/vit-base-patch16-224/resolve/main/preprocessor_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-28 15:15:28,421 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/vit-base-patch16-224/3f49326eb077187dfe1c2a2bb15fbd74e6ab91e3/preprocessor_config.json "HTTP/1.1 200 OK"
+2026-03-28 15:15:28,421 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/vit-base-patch16-224/3f49326eb077187dfe1c2a2bb15fbd74e6ab91e3/preprocessor_config.json "HTTP/1.1 200 OK"
+2026-03-28 15:15:28,728 [INFO] HTTP Request: HEAD https://huggingface.co/google/vit-base-patch16-224/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-28 15:15:28,728 [INFO] HTTP Request: HEAD https://huggingface.co/google/vit-base-patch16-224/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-28 15:15:28,830 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/vit-base-patch16-224/3f49326eb077187dfe1c2a2bb15fbd74e6ab91e3/config.json "HTTP/1.1 200 OK"
+2026-03-28 15:15:28,830 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/vit-base-patch16-224/3f49326eb077187dfe1c2a2bb15fbd74e6ab91e3/config.json "HTTP/1.1 200 OK"
+You passed `num_labels=54` which is incompatible to the `id2label` map of length `1000`.
+2026-03-28 15:15:29,138 [INFO] HTTP Request: HEAD https://huggingface.co/google/vit-base-patch16-224/resolve/main/model.safetensors "HTTP/1.1 302 Found"
+2026-03-28 15:15:29,138 [INFO] HTTP Request: HEAD https://huggingface.co/google/vit-base-patch16-224/resolve/main/model.safetensors "HTTP/1.1 302 Found"
+Loading weights:   0%|          | 0/200 [00:00<?, ?it/s]Loading weights: 100%|##########| 200/200 [00:00<00:00, 3333.88it/s]
+[1mViTForImageClassification LOAD REPORT[0m from: google/vit-base-patch16-224
+Key               | Status   |                                                                                           
+------------------+----------+-------------------------------------------------------------------------------------------
+classifier.weight | MISMATCH | Reinit due to size mismatch - ckpt: torch.Size([1000, 768]) vs model:torch.Size([54, 768])
+classifier.bias   | MISMATCH | Reinit due to size mismatch - ckpt: torch.Size([1000]) vs model:torch.Size([54])          
+
+Notes:
+- MISMATCH:	ckpt weights were loaded, but they did not match the original empty weight shapes.
+2026-03-28 15:15:30,149 [INFO] Trainable params: 85,840,182 / 85,840,182
+2026-03-28 15:15:30,149 [INFO] Trainable params: 85,840,182 / 85,840,182
+2026-03-28 15:15:30,185 [INFO] Starting training for 3 epochs
+2026-03-28 15:15:30,185 [INFO] Mixed precision: True, Gradient accumulation: 2
+c:\Users\saketh\AgriBloom-Agentic-ET2026\utils\train_vision.py:381: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler() if use_amp else None
+2026-03-28 15:15:30,185 [INFO] Starting training for 3 epochs
+2026-03-28 15:15:30,185 [INFO] Mixed precision: True, Gradient accumulation: 2
+2026-03-28 15:15:34,067 [INFO] Using GPU: NVIDIA GeForce RTX 4060 Laptop GPU (8.6 GB)
+2026-03-28 15:15:34,068 [INFO] CUDA Version: 12.1
+2026-03-28 15:15:55,663 [INFO] Loaded 84971 examples from data\manifests\train.csv
+2026-03-28 15:15:59,406 [INFO] Loaded 18208 examples from data\manifests\val.csv
+2026-03-28 15:15:59,452 [INFO] Training with 54 classes:
+2026-03-28 15:15:59,463 [INFO]   apple_black_rot: 1677 samples
+2026-03-28 15:15:59,471 [INFO]   apple_cedar_apple_rust: 1539 samples
+2026-03-28 15:15:59,479 [INFO]   apple_healthy: 1794 samples
+2026-03-28 15:15:59,486 [INFO]   apple_scab: 1753 samples
+2026-03-28 15:15:59,492 [INFO]   blueberry_healthy: 1600 samples
+2026-03-28 15:15:59,497 [INFO]   cherry_(including_sour)_healthy: 1620 samples
+2026-03-28 15:15:59,502 [INFO]   cherry_(including_sour)_powdery_mildew: 1501 samples
+2026-03-28 15:15:59,507 [INFO]   grape_black_rot: 1641 samples
+2026-03-28 15:15:59,516 [INFO]   grape_esca_(black_measles): 1677 samples
+2026-03-28 15:15:59,520 [INFO]   grape_healthy: 1518 samples
+2026-03-28 15:15:59,524 [INFO]   grape_leaf_blight_(isariopsis_leaf_spot): 1542 samples
+2026-03-28 15:15:59,531 [INFO]   maize_(maize)_cercospora_leaf_spot_gray_leaf_spot: 1427 samples
+2026-03-28 15:15:59,539 [INFO]   maize_(maize)_common_rust_: 1644 samples
+2026-03-28 15:15:59,546 [INFO]   maize_(maize)_healthy: 1631 samples
+2026-03-28 15:15:59,551 [INFO]   maize_(maize)_northern_leaf_blight: 1677 samples
+2026-03-28 15:15:59,555 [INFO]   orange_haunglongbing_(citrus_greening): 1739 samples
+2026-03-28 15:15:59,560 [INFO]   peach_bacterial_spot: 1586 samples
+2026-03-28 15:15:59,566 [INFO]   peach_healthy: 1516 samples
+2026-03-28 15:15:59,570 [INFO]   pepper,_bell_bacterial_spot: 1666 samples
+2026-03-28 15:15:59,573 [INFO]   pepper,_bell_healthy: 1712 samples
+2026-03-28 15:15:59,578 [INFO]   pepper_bell: 1730 samples
+2026-03-28 15:15:59,582 [INFO]   potato__early_blight: 702 samples
+2026-03-28 15:15:59,587 [INFO]   potato__healthy: 110 samples
+2026-03-28 15:15:59,591 [INFO]   potato__late_blight: 707 samples
+2026-03-28 15:15:59,596 [INFO]   potato_early_blight: 1674 samples
+2026-03-28 15:15:59,599 [INFO]   potato_healthy: 1596 samples
+2026-03-28 15:15:59,603 [INFO]   potato_late_blight: 1701 samples
+2026-03-28 15:15:59,607 [INFO]   ragi_blast: 2097 samples
+2026-03-28 15:15:59,612 [INFO]   ragi_healthy: 894 samples
+2026-03-28 15:15:59,617 [INFO]   ragi_rust: 1476 samples
+2026-03-28 15:15:59,621 [INFO]   raspberry_healthy: 1582 samples
+2026-03-28 15:15:59,624 [INFO]   rice_leaf_aug: 2686 samples
+2026-03-28 15:15:59,627 [INFO]   soybean_healthy: 1794 samples
+2026-03-28 15:15:59,632 [INFO]   squash_powdery_mildew: 1560 samples
+2026-03-28 15:15:59,637 [INFO]   strawberry_healthy: 1568 samples
+2026-03-28 15:15:59,640 [INFO]   strawberry_leaf_scorch: 1564 samples
+2026-03-28 15:15:59,644 [INFO]   sugarcane_healthy: 346 samples
+2026-03-28 15:15:59,647 [INFO]   sugarcane_mosaic: 330 samples
+2026-03-28 15:15:59,652 [INFO]   sugarcane_redrot: 366 samples
+2026-03-28 15:15:59,657 [INFO]   sugarcane_rust: 377 samples
+2026-03-28 15:15:59,662 [INFO]   sugarcane_yellow: 331 samples
+2026-03-28 15:15:59,667 [INFO]   tomato_bacterial_spot: 3018 samples
+2026-03-28 15:15:59,672 [INFO]   tomato_early_blight: 2326 samples
+2026-03-28 15:15:59,676 [INFO]   tomato_healthy: 2782 samples
+2026-03-28 15:15:59,680 [INFO]   tomato_late_blight: 2922 samples
+2026-03-28 15:15:59,684 [INFO]   tomato_leaf_mold: 2326 samples
+2026-03-28 15:15:59,689 [INFO]   tomato_mosaic_virus: 1847 samples
+2026-03-28 15:15:59,697 [INFO]   tomato_septoria_leaf_spot: 2738 samples
+2026-03-28 15:15:59,702 [INFO]   tomato_spider_mites_two_spotted_spider_mite: 2660 samples
+2026-03-28 15:15:59,720 [INFO]   tomato_target_spot: 2555 samples
+2026-03-28 15:15:59,737 [INFO]   tomato_yellow_leaf_curl_virus: 1721 samples
+2026-03-28 15:15:59,743 [INFO]   tomato_yellowleaf: 2267 samples
+2026-03-28 15:15:59,748 [INFO]   wheat_healthy: 81 samples
+2026-03-28 15:15:59,752 [INFO]   wheat_yellow_rust: 77 samples
+2026-03-28 15:16:00,677 [INFO] HTTP Request: HEAD https://huggingface.co/google/vit-base-patch16-224/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-03-28 15:16:00,984 [INFO] HTTP Request: HEAD https://huggingface.co/google/vit-base-patch16-224/resolve/main/preprocessor_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-28 15:16:00,985 [WARNING] Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-03-28 15:16:01,086 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/vit-base-patch16-224/3f49326eb077187dfe1c2a2bb15fbd74e6ab91e3/preprocessor_config.json "HTTP/1.1 200 OK"
+2026-03-28 15:16:01,428 [INFO] HTTP Request: HEAD https://huggingface.co/google/vit-base-patch16-224/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-28 15:16:01,598 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/vit-base-patch16-224/3f49326eb077187dfe1c2a2bb15fbd74e6ab91e3/config.json "HTTP/1.1 200 OK"
+2026-03-28 15:16:02,008 [INFO] HTTP Request: HEAD https://huggingface.co/google/vit-base-patch16-224/resolve/main/model.safetensors "HTTP/1.1 302 Found"
+2026-03-28 15:16:02,668 [INFO] Trainable params: 85,840,182 / 85,840,182
+2026-03-28 15:16:02,714 [INFO] Starting training for 3 epochs
+2026-03-28 15:16:02,715 [INFO] Mixed precision: True, Gradient accumulation: 2
+c:\Users\saketh\AgriBloom-Agentic-ET2026\utils\train_vision.py:410: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+2026-03-28 18:36:48,591 [INFO] Using GPU: NVIDIA GeForce RTX 4060 Laptop GPU (8.6 GB)
+2026-03-28 18:36:48,591 [INFO] CUDA Version: 12.1
+2026-03-28 18:36:48,591 [INFO] Using GPU: NVIDIA GeForce RTX 4060 Laptop GPU (8.6 GB)
+2026-03-28 18:36:48,591 [INFO] CUDA Version: 12.1
+2026-03-28 18:37:23,071 [INFO] Loaded 84971 examples from data\manifests\train.csv
+2026-03-28 18:37:23,071 [INFO] Loaded 84971 examples from data\manifests\train.csv
+2026-03-28 18:37:31,248 [INFO] Loaded 18208 examples from data\manifests\val.csv
+2026-03-28 18:37:31,248 [INFO] Loaded 18208 examples from data\manifests\val.csv
+2026-03-28 18:37:31,269 [INFO] Training with 54 classes:
+2026-03-28 18:37:31,275 [INFO]   apple_black_rot: 1677 samples
+2026-03-28 18:37:31,281 [INFO]   apple_cedar_apple_rust: 1539 samples
+2026-03-28 18:37:31,269 [INFO] Training with 54 classes:
+2026-03-28 18:37:31,275 [INFO]   apple_black_rot: 1677 samples
+2026-03-28 18:37:31,281 [INFO]   apple_cedar_apple_rust: 1539 samples
+2026-03-28 18:37:31,287 [INFO]   apple_healthy: 1794 samples
+2026-03-28 18:37:31,292 [INFO]   apple_scab: 1753 samples
+2026-03-28 18:37:31,297 [INFO]   blueberry_healthy: 1600 samples
+2026-03-28 18:37:31,287 [INFO]   apple_healthy: 1794 samples
+2026-03-28 18:37:31,292 [INFO]   apple_scab: 1753 samples
+2026-03-28 18:37:31,297 [INFO]   blueberry_healthy: 1600 samples
+2026-03-28 18:37:31,303 [INFO]   cherry_(including_sour)_healthy: 1620 samples
+2026-03-28 18:37:31,308 [INFO]   cherry_(including_sour)_powdery_mildew: 1501 samples
+2026-03-28 18:37:31,303 [INFO]   cherry_(including_sour)_healthy: 1620 samples
+2026-03-28 18:37:31,308 [INFO]   cherry_(including_sour)_powdery_mildew: 1501 samples
+2026-03-28 18:37:31,313 [INFO]   grape_black_rot: 1641 samples
+2026-03-28 18:37:31,319 [INFO]   grape_esca_(black_measles): 1677 samples
+2026-03-28 18:37:31,324 [INFO]   grape_healthy: 1518 samples
+2026-03-28 18:37:31,313 [INFO]   grape_black_rot: 1641 samples
+2026-03-28 18:37:31,319 [INFO]   grape_esca_(black_measles): 1677 samples
+2026-03-28 18:37:31,324 [INFO]   grape_healthy: 1518 samples
+2026-03-28 18:37:31,329 [INFO]   grape_leaf_blight_(isariopsis_leaf_spot): 1542 samples
+2026-03-28 18:37:31,334 [INFO]   maize_(maize)_cercospora_leaf_spot_gray_leaf_spot: 1427 samples
+2026-03-28 18:37:31,339 [INFO]   maize_(maize)_common_rust_: 1644 samples
+2026-03-28 18:37:31,329 [INFO]   grape_leaf_blight_(isariopsis_leaf_spot): 1542 samples
+2026-03-28 18:37:31,334 [INFO]   maize_(maize)_cercospora_leaf_spot_gray_leaf_spot: 1427 samples
+2026-03-28 18:37:31,339 [INFO]   maize_(maize)_common_rust_: 1644 samples
+2026-03-28 18:37:31,344 [INFO]   maize_(maize)_healthy: 1631 samples
+2026-03-28 18:37:31,349 [INFO]   maize_(maize)_northern_leaf_blight: 1677 samples
+2026-03-28 18:37:31,354 [INFO]   orange_haunglongbing_(citrus_greening): 1739 samples
+2026-03-28 18:37:31,359 [INFO]   peach_bacterial_spot: 1586 samples
+2026-03-28 18:37:31,344 [INFO]   maize_(maize)_healthy: 1631 samples
+2026-03-28 18:37:31,349 [INFO]   maize_(maize)_northern_leaf_blight: 1677 samples
+2026-03-28 18:37:31,354 [INFO]   orange_haunglongbing_(citrus_greening): 1739 samples
+2026-03-28 18:37:31,359 [INFO]   peach_bacterial_spot: 1586 samples
+2026-03-28 18:37:31,364 [INFO]   peach_healthy: 1516 samples
+2026-03-28 18:37:31,369 [INFO]   pepper,_bell_bacterial_spot: 1666 samples
+2026-03-28 18:37:31,375 [INFO]   pepper,_bell_healthy: 1712 samples
+2026-03-28 18:37:31,364 [INFO]   peach_healthy: 1516 samples
+2026-03-28 18:37:31,369 [INFO]   pepper,_bell_bacterial_spot: 1666 samples
+2026-03-28 18:37:31,375 [INFO]   pepper,_bell_healthy: 1712 samples
+2026-03-28 18:37:31,380 [INFO]   pepper_bell: 1730 samples
+2026-03-28 18:37:31,385 [INFO]   potato__early_blight: 702 samples
+2026-03-28 18:37:31,390 [INFO]   potato__healthy: 110 samples
+2026-03-28 18:37:31,380 [INFO]   pepper_bell: 1730 samples
+2026-03-28 18:37:31,385 [INFO]   potato__early_blight: 702 samples
+2026-03-28 18:37:31,390 [INFO]   potato__healthy: 110 samples
+2026-03-28 18:37:31,395 [INFO]   potato__late_blight: 707 samples
+2026-03-28 18:37:31,400 [INFO]   potato_early_blight: 1674 samples
+2026-03-28 18:37:31,405 [INFO]   potato_healthy: 1596 samples
+2026-03-28 18:37:31,395 [INFO]   potato__late_blight: 707 samples
+2026-03-28 18:37:31,400 [INFO]   potato_early_blight: 1674 samples
+2026-03-28 18:37:31,405 [INFO]   potato_healthy: 1596 samples
+2026-03-28 18:37:31,410 [INFO]   potato_late_blight: 1701 samples
+2026-03-28 18:37:31,415 [INFO]   ragi_blast: 2097 samples
+2026-03-28 18:37:31,421 [INFO]   ragi_healthy: 894 samples
+2026-03-28 18:37:31,410 [INFO]   potato_late_blight: 1701 samples
+2026-03-28 18:37:31,415 [INFO]   ragi_blast: 2097 samples
+2026-03-28 18:37:31,421 [INFO]   ragi_healthy: 894 samples
+2026-03-28 18:37:31,427 [INFO]   ragi_rust: 1476 samples
+2026-03-28 18:37:31,432 [INFO]   raspberry_healthy: 1582 samples
+2026-03-28 18:37:31,427 [INFO]   ragi_rust: 1476 samples
+2026-03-28 18:37:31,432 [INFO]   raspberry_healthy: 1582 samples
+2026-03-28 18:37:31,437 [INFO]   rice_leaf_aug: 2686 samples
+2026-03-28 18:37:31,442 [INFO]   soybean_healthy: 1794 samples
+2026-03-28 18:37:31,447 [INFO]   squash_powdery_mildew: 1560 samples
+2026-03-28 18:37:31,452 [INFO]   strawberry_healthy: 1568 samples
+2026-03-28 18:37:31,437 [INFO]   rice_leaf_aug: 2686 samples
+2026-03-28 18:37:31,442 [INFO]   soybean_healthy: 1794 samples
+2026-03-28 18:37:31,447 [INFO]   squash_powdery_mildew: 1560 samples
+2026-03-28 18:37:31,452 [INFO]   strawberry_healthy: 1568 samples
+2026-03-28 18:37:31,458 [INFO]   strawberry_leaf_scorch: 1564 samples
+2026-03-28 18:37:31,463 [INFO]   sugarcane_healthy: 346 samples
+2026-03-28 18:37:31,468 [INFO]   sugarcane_mosaic: 330 samples
+2026-03-28 18:37:31,458 [INFO]   strawberry_leaf_scorch: 1564 samples
+2026-03-28 18:37:31,463 [INFO]   sugarcane_healthy: 346 samples
+2026-03-28 18:37:31,468 [INFO]   sugarcane_mosaic: 330 samples
+2026-03-28 18:37:31,473 [INFO]   sugarcane_redrot: 366 samples
+2026-03-28 18:37:31,478 [INFO]   sugarcane_rust: 377 samples
+2026-03-28 18:37:31,473 [INFO]   sugarcane_redrot: 366 samples
+2026-03-28 18:37:31,478 [INFO]   sugarcane_rust: 377 samples
+2026-03-28 18:37:31,484 [INFO]   sugarcane_yellow: 331 samples
+2026-03-28 18:37:31,490 [INFO]   tomato_bacterial_spot: 3018 samples
+2026-03-28 18:37:31,496 [INFO]   tomato_early_blight: 2326 samples
+2026-03-28 18:37:31,484 [INFO]   sugarcane_yellow: 331 samples
+2026-03-28 18:37:31,490 [INFO]   tomato_bacterial_spot: 3018 samples
+2026-03-28 18:37:31,496 [INFO]   tomato_early_blight: 2326 samples
+2026-03-28 18:37:31,502 [INFO]   tomato_healthy: 2782 samples
+2026-03-28 18:37:31,509 [INFO]   tomato_late_blight: 2922 samples
+2026-03-28 18:37:31,502 [INFO]   tomato_healthy: 2782 samples
+2026-03-28 18:37:31,509 [INFO]   tomato_late_blight: 2922 samples
+2026-03-28 18:37:31,516 [INFO]   tomato_leaf_mold: 2326 samples
+2026-03-28 18:37:31,523 [INFO]   tomato_mosaic_virus: 1847 samples
+2026-03-28 18:37:31,530 [INFO]   tomato_septoria_leaf_spot: 2738 samples
+2026-03-28 18:37:31,516 [INFO]   tomato_leaf_mold: 2326 samples
+2026-03-28 18:37:31,523 [INFO]   tomato_mosaic_virus: 1847 samples
+2026-03-28 18:37:31,530 [INFO]   tomato_septoria_leaf_spot: 2738 samples
+2026-03-28 18:37:31,535 [INFO]   tomato_spider_mites_two_spotted_spider_mite: 2660 samples
+2026-03-28 18:37:31,541 [INFO]   tomato_target_spot: 2555 samples
+2026-03-28 18:37:31,535 [INFO]   tomato_spider_mites_two_spotted_spider_mite: 2660 samples
+2026-03-28 18:37:31,541 [INFO]   tomato_target_spot: 2555 samples
+2026-03-28 18:37:31,547 [INFO]   tomato_yellow_leaf_curl_virus: 1721 samples
+2026-03-28 18:37:31,554 [INFO]   tomato_yellowleaf: 2267 samples
+2026-03-28 18:37:31,562 [INFO]   wheat_healthy: 81 samples
+2026-03-28 18:37:31,547 [INFO]   tomato_yellow_leaf_curl_virus: 1721 samples
+2026-03-28 18:37:31,554 [INFO]   tomato_yellowleaf: 2267 samples
+2026-03-28 18:37:31,562 [INFO]   wheat_healthy: 81 samples
+2026-03-28 18:37:31,569 [INFO]   wheat_yellow_rust: 77 samples
+2026-03-28 18:37:31,569 [INFO]   wheat_yellow_rust: 77 samples
+2026-03-28 18:37:32,906 [INFO] HTTP Request: HEAD https://huggingface.co/google/vit-base-patch16-224/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-03-28 18:37:32,906 [INFO] HTTP Request: HEAD https://huggingface.co/google/vit-base-patch16-224/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-03-28 18:37:33,213 [INFO] HTTP Request: HEAD https://huggingface.co/google/vit-base-patch16-224/resolve/main/preprocessor_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-28 18:37:33,213 [INFO] HTTP Request: HEAD https://huggingface.co/google/vit-base-patch16-224/resolve/main/preprocessor_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-28 18:37:33,267 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/vit-base-patch16-224/3f49326eb077187dfe1c2a2bb15fbd74e6ab91e3/preprocessor_config.json "HTTP/1.1 200 OK"
+2026-03-28 18:37:33,267 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/vit-base-patch16-224/3f49326eb077187dfe1c2a2bb15fbd74e6ab91e3/preprocessor_config.json "HTTP/1.1 200 OK"
+2026-03-28 18:37:33,623 [INFO] HTTP Request: HEAD https://huggingface.co/google/vit-base-patch16-224/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-28 18:37:33,623 [INFO] HTTP Request: HEAD https://huggingface.co/google/vit-base-patch16-224/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-28 18:37:33,725 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/vit-base-patch16-224/3f49326eb077187dfe1c2a2bb15fbd74e6ab91e3/config.json "HTTP/1.1 200 OK"
+2026-03-28 18:37:33,725 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/vit-base-patch16-224/3f49326eb077187dfe1c2a2bb15fbd74e6ab91e3/config.json "HTTP/1.1 200 OK"
+You passed `num_labels=54` which is incompatible to the `id2label` map of length `1000`.
+2026-03-28 18:37:34,135 [INFO] HTTP Request: HEAD https://huggingface.co/google/vit-base-patch16-224/resolve/main/model.safetensors "HTTP/1.1 302 Found"
+2026-03-28 18:37:34,135 [INFO] HTTP Request: HEAD https://huggingface.co/google/vit-base-patch16-224/resolve/main/model.safetensors "HTTP/1.1 302 Found"
+Loading weights:   0%|          | 0/200 [00:00<?, ?it/s]Loading weights: 100%|##########| 200/200 [00:00<00:00, 2258.16it/s]
+[1mViTForImageClassification LOAD REPORT[0m from: google/vit-base-patch16-224
+Key               | Status   |                                                                                           
+------------------+----------+-------------------------------------------------------------------------------------------
+classifier.bias   | MISMATCH | Reinit due to size mismatch - ckpt: torch.Size([1000]) vs model:torch.Size([54])          
+classifier.weight | MISMATCH | Reinit due to size mismatch - ckpt: torch.Size([1000, 768]) vs model:torch.Size([54, 768])
+
+Notes:
+- MISMATCH:	ckpt weights were loaded, but they did not match the original empty weight shapes.
+2026-03-28 18:37:36,275 [INFO] Trainable params: 85,840,182 / 85,840,182
+2026-03-28 18:37:36,275 [INFO] Trainable params: 85,840,182 / 85,840,182
+2026-03-28 18:37:36,324 [INFO] Starting training for 3 epochs
+2026-03-28 18:37:36,325 [INFO] Mixed precision: True, Gradient accumulation: 2
+C:\Users\saketh\AgriBloom-Agentic-ET2026\utils\train_vision.py:381: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler() if use_amp else None
+2026-03-28 18:37:36,324 [INFO] Starting training for 3 epochs
+2026-03-28 18:37:36,325 [INFO] Mixed precision: True, Gradient accumulation: 2
+C:\Users\saketh\AgriBloom-Agentic-ET2026\utils\train_vision.py:410: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+2026-03-28 18:43:34,177 [INFO] Using GPU: NVIDIA GeForce RTX 4060 Laptop GPU (8.6 GB)
+2026-03-28 18:43:34,178 [INFO] CUDA Version: 12.1
+2026-03-28 18:44:15,234 [INFO] Loaded 84971 examples from data\manifests\train.csv
+2026-03-28 18:44:21,614 [INFO] Loaded 18208 examples from data\manifests\val.csv
+2026-03-28 18:44:21,633 [INFO] Training with 54 classes:
+2026-03-28 18:44:21,638 [INFO]   apple_black_rot: 1677 samples
+2026-03-28 18:44:21,644 [INFO]   apple_cedar_apple_rust: 1539 samples
+2026-03-28 18:44:21,650 [INFO]   apple_healthy: 1794 samples
+2026-03-28 18:44:21,656 [INFO]   apple_scab: 1753 samples
+2026-03-28 18:44:21,663 [INFO]   blueberry_healthy: 1600 samples
+2026-03-28 18:44:21,668 [INFO]   cherry_(including_sour)_healthy: 1620 samples
+2026-03-28 18:44:21,672 [INFO]   cherry_(including_sour)_powdery_mildew: 1501 samples
+2026-03-28 18:44:21,675 [INFO]   grape_black_rot: 1641 samples
+2026-03-28 18:44:21,680 [INFO]   grape_esca_(black_measles): 1677 samples
+2026-03-28 18:44:21,685 [INFO]   grape_healthy: 1518 samples
+2026-03-28 18:44:21,690 [INFO]   grape_leaf_blight_(isariopsis_leaf_spot): 1542 samples
+2026-03-28 18:44:21,695 [INFO]   maize_(maize)_cercospora_leaf_spot_gray_leaf_spot: 1427 samples
+2026-03-28 18:44:21,700 [INFO]   maize_(maize)_common_rust_: 1644 samples
+2026-03-28 18:44:21,704 [INFO]   maize_(maize)_healthy: 1631 samples
+2026-03-28 18:44:21,709 [INFO]   maize_(maize)_northern_leaf_blight: 1677 samples
+2026-03-28 18:44:21,714 [INFO]   orange_haunglongbing_(citrus_greening): 1739 samples
+2026-03-28 18:44:21,720 [INFO]   peach_bacterial_spot: 1586 samples
+2026-03-28 18:44:21,725 [INFO]   peach_healthy: 1516 samples
+2026-03-28 18:44:21,729 [INFO]   pepper,_bell_bacterial_spot: 1666 samples
+2026-03-28 18:44:21,733 [INFO]   pepper,_bell_healthy: 1712 samples
+2026-03-28 18:44:21,738 [INFO]   pepper_bell: 1730 samples
+2026-03-28 18:44:21,742 [INFO]   potato__early_blight: 702 samples
+2026-03-28 18:44:21,747 [INFO]   potato__healthy: 110 samples
+2026-03-28 18:44:21,751 [INFO]   potato__late_blight: 707 samples
+2026-03-28 18:44:21,756 [INFO]   potato_early_blight: 1674 samples
+2026-03-28 18:44:21,761 [INFO]   potato_healthy: 1596 samples
+2026-03-28 18:44:21,766 [INFO]   potato_late_blight: 1701 samples
+2026-03-28 18:44:21,770 [INFO]   ragi_blast: 2097 samples
+2026-03-28 18:44:21,775 [INFO]   ragi_healthy: 894 samples
+2026-03-28 18:44:21,778 [INFO]   ragi_rust: 1476 samples
+2026-03-28 18:44:21,782 [INFO]   raspberry_healthy: 1582 samples
+2026-03-28 18:44:21,786 [INFO]   rice_leaf_aug: 2686 samples
+2026-03-28 18:44:21,790 [INFO]   soybean_healthy: 1794 samples
+2026-03-28 18:44:21,794 [INFO]   squash_powdery_mildew: 1560 samples
+2026-03-28 18:44:21,799 [INFO]   strawberry_healthy: 1568 samples
+2026-03-28 18:44:21,804 [INFO]   strawberry_leaf_scorch: 1564 samples
+2026-03-28 18:44:21,809 [INFO]   sugarcane_healthy: 346 samples
+2026-03-28 18:44:21,814 [INFO]   sugarcane_mosaic: 330 samples
+2026-03-28 18:44:21,819 [INFO]   sugarcane_redrot: 366 samples
+2026-03-28 18:44:21,823 [INFO]   sugarcane_rust: 377 samples
+2026-03-28 18:44:21,827 [INFO]   sugarcane_yellow: 331 samples
+2026-03-28 18:44:21,832 [INFO]   tomato_bacterial_spot: 3018 samples
+2026-03-28 18:44:21,836 [INFO]   tomato_early_blight: 2326 samples
+2026-03-28 18:44:21,841 [INFO]   tomato_healthy: 2782 samples
+2026-03-28 18:44:21,846 [INFO]   tomato_late_blight: 2922 samples
+2026-03-28 18:44:21,850 [INFO]   tomato_leaf_mold: 2326 samples
+2026-03-28 18:44:21,855 [INFO]   tomato_mosaic_virus: 1847 samples
+2026-03-28 18:44:21,860 [INFO]   tomato_septoria_leaf_spot: 2738 samples
+2026-03-28 18:44:21,865 [INFO]   tomato_spider_mites_two_spotted_spider_mite: 2660 samples
+2026-03-28 18:44:21,870 [INFO]   tomato_target_spot: 2555 samples
+2026-03-28 18:44:21,875 [INFO]   tomato_yellow_leaf_curl_virus: 1721 samples
+2026-03-28 18:44:21,880 [INFO]   tomato_yellowleaf: 2267 samples
+2026-03-28 18:44:21,885 [INFO]   wheat_healthy: 81 samples
+2026-03-28 18:44:21,891 [INFO]   wheat_yellow_rust: 77 samples
+2026-03-28 18:44:23,223 [INFO] HTTP Request: HEAD https://huggingface.co/google/vit-base-patch16-224/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-03-28 18:44:23,224 [WARNING] Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-03-28 18:44:23,531 [INFO] HTTP Request: HEAD https://huggingface.co/google/vit-base-patch16-224/resolve/main/preprocessor_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-28 18:44:23,632 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/vit-base-patch16-224/3f49326eb077187dfe1c2a2bb15fbd74e6ab91e3/preprocessor_config.json "HTTP/1.1 200 OK"
+2026-03-28 18:44:23,939 [INFO] HTTP Request: HEAD https://huggingface.co/google/vit-base-patch16-224/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-28 18:44:23,997 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/vit-base-patch16-224/3f49326eb077187dfe1c2a2bb15fbd74e6ab91e3/config.json "HTTP/1.1 200 OK"
+2026-03-28 18:44:24,349 [INFO] HTTP Request: HEAD https://huggingface.co/google/vit-base-patch16-224/resolve/main/model.safetensors "HTTP/1.1 302 Found"
+2026-03-28 18:45:06,908 [INFO] Trainable params: 85,840,182 / 85,840,182
+2026-03-28 18:45:06,951 [INFO] Starting training for 3 epochs
+2026-03-28 18:45:06,951 [INFO] Mixed precision: True, Gradient accumulation: 2
+2026-03-28 19:01:04,297 [INFO] Using GPU: NVIDIA GeForce RTX 4060 Laptop GPU (8.6 GB)
+2026-03-28 19:01:04,297 [INFO] CUDA Version: 12.1
+2026-03-28 19:01:42,382 [INFO] Loaded 84971 examples from data\manifests\train.csv
+2026-03-28 19:01:50,279 [INFO] Loaded 18208 examples from data\manifests\val.csv
+2026-03-28 19:01:50,301 [INFO] Training with 54 classes:
+2026-03-28 19:01:50,306 [INFO]   apple_black_rot: 1677 samples
+2026-03-28 19:01:50,312 [INFO]   apple_cedar_apple_rust: 1539 samples
+2026-03-28 19:01:50,317 [INFO]   apple_healthy: 1794 samples
+2026-03-28 19:01:50,323 [INFO]   apple_scab: 1753 samples
+2026-03-28 19:01:50,329 [INFO]   blueberry_healthy: 1600 samples
+2026-03-28 19:01:50,335 [INFO]   cherry_(including_sour)_healthy: 1620 samples
+2026-03-28 19:01:50,340 [INFO]   cherry_(including_sour)_powdery_mildew: 1501 samples
+2026-03-28 19:01:50,345 [INFO]   grape_black_rot: 1641 samples
+2026-03-28 19:01:50,351 [INFO]   grape_esca_(black_measles): 1677 samples
+2026-03-28 19:01:50,357 [INFO]   grape_healthy: 1518 samples
+2026-03-28 19:01:50,363 [INFO]   grape_leaf_blight_(isariopsis_leaf_spot): 1542 samples
+2026-03-28 19:01:50,368 [INFO]   maize_(maize)_cercospora_leaf_spot_gray_leaf_spot: 1427 samples
+2026-03-28 19:01:50,374 [INFO]   maize_(maize)_common_rust_: 1644 samples
+2026-03-28 19:01:50,380 [INFO]   maize_(maize)_healthy: 1631 samples
+2026-03-28 19:01:50,386 [INFO]   maize_(maize)_northern_leaf_blight: 1677 samples
+2026-03-28 19:01:50,392 [INFO]   orange_haunglongbing_(citrus_greening): 1739 samples
+2026-03-28 19:01:50,397 [INFO]   peach_bacterial_spot: 1586 samples
+2026-03-28 19:01:50,403 [INFO]   peach_healthy: 1516 samples
+2026-03-28 19:01:50,408 [INFO]   pepper,_bell_bacterial_spot: 1666 samples
+2026-03-28 19:01:50,414 [INFO]   pepper,_bell_healthy: 1712 samples
+2026-03-28 19:01:50,419 [INFO]   pepper_bell: 1730 samples
+2026-03-28 19:01:50,424 [INFO]   potato__early_blight: 702 samples
+2026-03-28 19:01:50,429 [INFO]   potato__healthy: 110 samples
+2026-03-28 19:01:50,435 [INFO]   potato__late_blight: 707 samples
+2026-03-28 19:01:50,440 [INFO]   potato_early_blight: 1674 samples
+2026-03-28 19:01:50,445 [INFO]   potato_healthy: 1596 samples
+2026-03-28 19:01:50,451 [INFO]   potato_late_blight: 1701 samples
+2026-03-28 19:01:50,457 [INFO]   ragi_blast: 2097 samples
+2026-03-28 19:01:50,463 [INFO]   ragi_healthy: 894 samples
+2026-03-28 19:01:50,469 [INFO]   ragi_rust: 1476 samples
+2026-03-28 19:01:50,475 [INFO]   raspberry_healthy: 1582 samples
+2026-03-28 19:01:50,481 [INFO]   rice_leaf_aug: 2686 samples
+2026-03-28 19:01:50,487 [INFO]   soybean_healthy: 1794 samples
+2026-03-28 19:01:50,493 [INFO]   squash_powdery_mildew: 1560 samples
+2026-03-28 19:01:50,500 [INFO]   strawberry_healthy: 1568 samples
+2026-03-28 19:01:50,504 [INFO]   strawberry_leaf_scorch: 1564 samples
+2026-03-28 19:01:50,511 [INFO]   sugarcane_healthy: 346 samples
+2026-03-28 19:01:50,516 [INFO]   sugarcane_mosaic: 330 samples
+2026-03-28 19:01:50,520 [INFO]   sugarcane_redrot: 366 samples
+2026-03-28 19:01:50,526 [INFO]   sugarcane_rust: 377 samples
+2026-03-28 19:01:50,530 [INFO]   sugarcane_yellow: 331 samples
+2026-03-28 19:01:50,535 [INFO]   tomato_bacterial_spot: 3018 samples
+2026-03-28 19:01:50,541 [INFO]   tomato_early_blight: 2326 samples
+2026-03-28 19:01:50,546 [INFO]   tomato_healthy: 2782 samples
+2026-03-28 19:01:50,552 [INFO]   tomato_late_blight: 2922 samples
+2026-03-28 19:01:50,557 [INFO]   tomato_leaf_mold: 2326 samples
+2026-03-28 19:01:50,563 [INFO]   tomato_mosaic_virus: 1847 samples
+2026-03-28 19:01:50,568 [INFO]   tomato_septoria_leaf_spot: 2738 samples
+2026-03-28 19:01:50,574 [INFO]   tomato_spider_mites_two_spotted_spider_mite: 2660 samples
+2026-03-28 19:01:50,580 [INFO]   tomato_target_spot: 2555 samples
+2026-03-28 19:01:50,586 [INFO]   tomato_yellow_leaf_curl_virus: 1721 samples
+2026-03-28 19:01:50,592 [INFO]   tomato_yellowleaf: 2267 samples
+2026-03-28 19:01:50,598 [INFO]   wheat_healthy: 81 samples
+2026-03-28 19:01:50,603 [INFO]   wheat_yellow_rust: 77 samples
+2026-03-28 19:01:52,100 [INFO] HTTP Request: HEAD https://huggingface.co/google/vit-base-patch16-224/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-03-28 19:01:52,408 [INFO] HTTP Request: HEAD https://huggingface.co/google/vit-base-patch16-224/resolve/main/preprocessor_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-28 19:01:52,465 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/vit-base-patch16-224/3f49326eb077187dfe1c2a2bb15fbd74e6ab91e3/preprocessor_config.json "HTTP/1.1 200 OK"
+2026-03-28 19:01:52,840 [INFO] HTTP Request: HEAD https://huggingface.co/google/vit-base-patch16-224/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-28 19:01:52,931 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/vit-base-patch16-224/3f49326eb077187dfe1c2a2bb15fbd74e6ab91e3/config.json "HTTP/1.1 200 OK"
+2026-03-28 19:01:53,239 [INFO] HTTP Request: HEAD https://huggingface.co/google/vit-base-patch16-224/resolve/main/model.safetensors "HTTP/1.1 302 Found"
+2026-03-28 19:01:53,240 [WARNING] Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-03-28 19:03:07,416 [INFO] Trainable params: 85,840,182 / 85,840,182
+2026-03-28 19:03:07,451 [INFO] Starting training for 3 epochs
+2026-03-28 19:03:07,452 [INFO] Mixed precision: True, Gradient accumulation: 2
